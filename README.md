@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# Guia de Configuração e Execução do Projeto Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este documento fornece instruções claras sobre como instalar as dependências, rodar o projeto no Android e na web, e compilar o projeto. Também explica como lidar com informações sensíveis no arquivo app.json antes de compartilhar o projeto.
 
-## Get started
+## **Pré-requisitos**
 
-1. Install dependencies
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
+- [Node.js](https://nodejs.org/) (versão recomendada: LTS)
+- O aplicativo **Expo Go** instalado em seu dispositivo Android ou iOS
+- Um navegador atualizado para rodar na web
+
+Tambem é necessario: 
+
+## Configuração do `app.json`
+
+Este projeto utiliza o **EAS Build** para compilar o aplicativo. O arquivo `app.json` é essencial para configurar os detalhes do seu aplicativo, como nome, ícone, identificador de pacote e outras informações específicas para cada plataforma.
+
+Simplesmente crie um arquivo `app.json` na raiz do projeto, copie e cole os dados que estão em `app.example.json` nesse novo arquivo.
+
+## **Instalação de dependências**
+
+1. Clone o repositório para sua máquina local:
    ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd <NOME_DO_PROJETO>
+
+2. Instale as dependências do projeto:
    npm install
-   ```
 
-2. Start the app
+## **Rodar o projeto**
 
-   ```bash
-    npx expo start
-   ```
+1. Inicie o servidor de desenvolvimento:
+   npx expo start
 
-In the output, you'll find options to open the app in a
+2. No terminal, você verá um QR code. Abra o aplicativo Expo Go no seu dispositivo e escaneie o QR code:
+   npm install
+   - No Android: Use a câmera do aplicativo Expo Go.
+   - No iOS: Use a câmera do próprio dispositivo.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+3. O projeto será carregado no aplicativo Expo Go.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+4. Para rodar na web, pressione a tecla w no terminal após iniciar o servidor. O projeto será aberto no navegador.
 
-## Get a fresh project
+## **Compilar o projeto**
 
-When you're ready, run:
+1. Para compilar para Android, gere o arquivo APK ou AAB para distribuição:
+   - Seguir os passos no seguinte link: https://docs.expo.dev/build/setup/
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+2. Para compilar para Web colocar o seguinte comando:
+   - npx expo export --platform web
+   - O comando irá gerar uma pasta web-build com os arquivos estáticos do projeto que podem ser publicados em qualquer servidor web.

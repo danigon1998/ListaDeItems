@@ -1,0 +1,68 @@
+import { Category } from '../interfaces/ICategoria';
+
+export const mockCategories: Category[] = [
+  {
+    id: 'frutas',
+    name: 'Frutas',
+    items: [
+      { id: '1', name: 'Maçã' },
+      { id: '2', name: 'Banana' },
+      { id: '3', name: 'Laranja' },
+      { id: '4', name: 'Uva' },
+      { id: '5', name: 'Abacaxi' },
+      { id: '6', name: 'Manga' },
+      { id: '7', name: 'Morango' },
+      { id: '8', name: 'Melancia' },
+      { id: '9', name: 'Pêra' },
+      { id: '10', name: 'Kiwi' },
+    ],
+  },
+  {
+    id: 'roupas',
+    name: 'Roupas',
+    items: [
+      { id: '11', name: 'Camiseta' },
+      { id: '12', name: 'Calça' },
+      { id: '13', name: 'Casaco' },
+      { id: '14', name: 'Meias' },
+      { id: '15', name: 'Shorts' },
+      { id: '16', name: 'Blusa' },
+      { id: '17', name: 'Vestido' },
+      { id: '18', name: 'Jaqueta' },
+      { id: '19', name: 'Chapéu' },
+      { id: '20', name: 'Sapato' },
+    ],
+  },
+  {
+    id: 'produtos-limpeza',
+    name: 'Produtos de Limpeza',
+    items: [
+      { id: '21', name: 'Sabão em pó' },
+      { id: '22', name: 'Detergente' },
+      { id: '23', name: 'Água sanitária' },
+      { id: '24', name: 'Desinfetante' },
+      { id: '25', name: 'Esponja de aço' },
+      { id: '26', name: 'Pano de chão' },
+      { id: '27', name: 'Vassoura' },
+      { id: '28', name: 'Rodo' },
+      { id: '29', name: 'Sabonete líquido' },
+      { id: '30', name: 'Lenços umedecidos' },
+    ],
+  },
+  {
+    id: 'bebidas',
+    name: 'Bebidas',
+    items: [
+      { id: '31', name: 'Água' },
+      { id: '32', name: 'Refrigerante' },
+      { id: '33', name: 'Suco de Laranja' },
+      { id: '34', name: 'Cerveja' },
+      { id: '35', name: 'Vinho' },
+      { id: '36', name: 'Café' },
+      { id: '37', name: 'Chá' },
+      { id: '38', name: 'Leite' },
+      { id: '39', name: 'Água de Coco' },
+      { id: '40', name: 'Energético' },
+    ],
+  },
+];
