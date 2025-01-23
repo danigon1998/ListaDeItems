@@ -10,8 +10,6 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 - O aplicativo **Expo Go** instalado em seu dispositivo Android ou iOS
 - Um navegador atualizado para rodar na web
 
-Tambem é necessario: 
-
 ## Configuração do `app.json`
 
 Este projeto utiliza o **EAS Build** para compilar o aplicativo. O arquivo `app.json` é essencial para configurar os detalhes do seu aplicativo, como nome, ícone, identificador de pacote e outras informações específicas para cada plataforma.
