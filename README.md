@@ -20,8 +20,7 @@ Simplesmente crie um arquivo `app.json` na raiz do projeto, copie e cole os dado
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd <NOME_DO_PROJETO>
+   git clone https://github.com/danigon1998/ListaDeItems.git
 
 2. Instale as dependências do projeto:
    npm install
